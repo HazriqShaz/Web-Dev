@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
+/* font-family: "Alumni Sans Pinstripe", sans-serif; */
+
+#section-1 {
+    background: rgb(217,78,41);
+    background: linear-gradient(180deg, rgba(217,78,41,1) 0%, rgba(15,43,54,1) 50%, rgba(9,64,66,1) 90%, rgba(19,77,87,1) 100%); 
+}
+
+#section-1 h1{
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-size: 6em;
+    text-align: center;
+    padding-top: 1.2em;
+    color: white;
+    text-shadow: 4px 3px 0 #091c25;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 90vw;
+    background-color: #091c25;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.main-content nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    border-bottom: 4px solid #094042;
+}
+
+.nav-links li {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    display: block;
+    color: #d4c3b0;
+    /* background-color: red; */
+    height: 60px;
+    padding: 1.2em 0;
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-links .active {
+    background-color: #094042;
+}
+
+.nav-links .active.left {
+    border-top-left-radius: 10px;
+}
+
+.nav-links .active.right {
+    border-top-right-radius: 10px;
+}
+
+.nav-links a:hover {
+    background-color: #094042;
+}
+
+.nav-links .right:hover {
+    border-top-right-radius: 10px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    /* background-color: blue; */
+}
+
+.image-container-1 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    /* border-right: 1px solid green; */
+    object-fit: fill;
+    padding-top: 2.5em;
+}
+
+.image-container-1 p {
+    font-family: "Space Mono", monospace;
+    color: #e2d8d0;
+    align-self: center;
+    padding-top: 1.5em;
+    font-size: larger;
+}
+
+.image-container-1 img {
+    width: 70%;
+    border-radius: 10px;
+    align-self: center;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: all 1s ease;
+}
+
+.image-container-1 img:hover {
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+}
+
+.image-container-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    /* border-right: 1px solid green; */
+    resize: both;
+}
+
+.image-container-2 img {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.main-container-left {
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    justify-content: center;
+    padding: 2em 3em;
+    /* background-color: blue; */
+}
+
+.main-container-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    /* background-color: red; */
+}
+
+.main-container table {
+    font-family: "Space Mono", monospace;
+    border-collapse: collapse;
+    width: 50%;
+    /* border: 1px solid white; */
+}
+
+/* .main-container table td {
+    border: 1px solid white;
+} */
+
+.main-container table td {
+    color: #e2d8d0;
+    padding-top: 0.2em;
+}
+
+.main-container table td a{
+    text-decoration: none;
+    color: #f9744d;
+}
+
+.main-container table td a:hover{
+    text-decoration: underline;
+}
+
+#avatar {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: all 1s ease;
+}
+
+#avatar:hover {
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+}
